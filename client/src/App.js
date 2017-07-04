@@ -6,13 +6,20 @@ class App extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {users: []};
+    this.state = {
+      users: [],
+      article: {}
+    };
   };
 
   componentDidMount() {
     fetch("/users")
       .then(res => res.json())
       .then(users => this.setState({users}));
+
+    fetch("/articles/34234")
+      .then(res => res.json())
+      .then(article => this.setState({article}));
   }
 
   render() {
@@ -30,6 +37,9 @@ class App extends Component {
                 return <div key={user.id}>{user.username}</div>;
               })
             }
+        <h2>Article</h2>
+            <h3>{this.state.article.title}</h3>
+            <div>{this.state.article.body}</div>
       </div>
     );
   }

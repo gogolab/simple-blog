@@ -1,17 +1,13 @@
 var express = require('express');
 var router = express.Router();
+var articles = require('../controllers/articlesController');
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-//  res.send('respond with a resource');
+router.get('/', articles.list_articles);
+router.post('/', articles.create_article);
 
-  res.json([{
-  	id: 1,
-  	username: "samsepi0l"
-  }, {
-  	id: 2,
-  	username: "D0loresH4ze"
-  }]);
-});
+router.get('/:articleId', articles.read_article);
+router.put('/:articleId', articles.update_article);
+router.delete('/:articleId', articles.delete_article);
 
 module.exports = router;
