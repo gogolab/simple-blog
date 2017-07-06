@@ -9,7 +9,9 @@ exports.create_article = function(req, res) {
 };
 
 exports.read_article = function(req, res) {
-  res.json({title: "Very first title", body: "Lorem ipsum dolor sit amet"});
+//  res.json(JSON.stringify(req.params.articleId));
+//  res.send(req.params.articleId); // dziala
+  res.json(data.articles.find( element => element.id === parseInt(req.params.articleId) ));
 };
 
 exports.update_article = function(req, res) {

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Row, Col } from 'reactstrap';
 
 export class Article extends Component {
   constructor(props) {
@@ -24,12 +25,17 @@ export class Article extends Component {
   
   render() {
     return (
-      <div>
-        <h1>{this.state.article.title}</h1>
-        <div className="body">{this.state.article.body}</div>
-        <h4>params:</h4>
-        <p>{this.props.match.params.id}</p>
-      </div>
+      <Row>
+        <Col>
+          <h1>{this.state.article.title}</h1>
+          <div style={{}}>
+            <img src={this.state.article.imageUrl} className="img-fluid" />
+          </div>
+          <div className="body">{this.state.article.body}</div>
+          <h4>params:</h4>
+          <p>Article ID: {this.props.match.params.id}</p>
+        </Col>
+      </Row>
     );
   }
 
