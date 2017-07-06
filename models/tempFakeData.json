@@ -1,0 +1,176 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "avatarUrl": ""
+    },
+    {
+      "id": 2,
+      "name": "Jane Nodoe",
+      "avatarUrl": ""
+    }
+  ],
+  "articles": [
+    {
+      "id": 1,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/qM1IsUc.jpg",
+      "title": "Some title no 1",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 2,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "https://i.imgur.com/swQucrP.png",
+      "title": "Some title no 2 - this one is longer",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 3,
+      "authorId": 2,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/tuGyblk.jpg",
+      "title": "Some title no 3 - this one is funny",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 4,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/lro9S2s.jpg",
+      "title": "Some title no 4 - clickbait",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 5,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/8XUf6N0.jpg",
+      "title": "Some title no 5",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 6,
+      "authorId": 2,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/Dk13hmb.jpg",
+      "title": "Some title no 6 - no idea",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 7,
+      "authorId": 2,
+      "created": "long time ago",
+      "imageUrl": "https://i.imgur.com/9ux1vvM.jpg",
+      "title": "Some title no 7. Just kidding",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 8,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "https://i.redd.it/itceo9gnbyvx.jpg",
+      "title": "Short 8",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 9,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "https://i.redd.it/l8zoh6zklkux.jpg",
+      "title": "Some title no 9 - this one is fine",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 10,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "https://i.imgur.com/wcJr0oH.jpg",
+      "title": "Some title no 10, just tell me when...",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 11,
+      "authorId": 2,
+      "created": "long time ago",
+      "imageUrl": "https://i.imgur.com/NRdZQJL.jpg",
+      "title": "Some title no 11, just 10 plus 1",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 12,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "https://c2.staticflickr.com/2/1477/25631230280_6fd9bdaf54_h.jpg",
+      "title": "Some title no 12 - mess",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 13,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/p9i4hQx.jpg",
+      "title": "Some title no 13 - with",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 14,
+      "authorId": 2,
+      "created": "long time ago",
+      "imageUrl": "https://i.imgur.com/dTpuPER.jpg",
+      "title": "Some title no 14 - the",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 15,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/Tn0f83g.jpg",
+      "title": "Some title no 15 - best",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 16,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "https://i.imgur.com/BJQnzps.jpg",
+      "title": "Some title no 16 - die",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 17,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "https://i.imgur.com/Yf6D2pr.jpg",
+      "title": "Some title no 17 - like",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 18,
+      "authorId": 2,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/GLSfiHK.jpg",
+      "title": "Some title no 18 - the",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 19,
+      "authorId": 2,
+      "created": "long time ago",
+      "imageUrl": "http://i.imgur.com/78Ej0qa.jpg",
+      "title": "Some title no 19 - rest",
+      "body": "Lorem ipsum dolor sit amet..."
+    },
+    {
+      "id": 20,
+      "authorId": 1,
+      "created": "long time ago",
+      "imageUrl": "https://farm6.staticflickr.com/5618/22200103952_49e68c39ec_k.jpg",
+      "title": "Some title no 20 - !",
+      "body": "Lorem ipsum dolor sit amet..."
+    }
+  ]
+}

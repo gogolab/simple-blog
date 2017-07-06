@@ -1,7 +1,7 @@
-'use strict';
+var data = require('../models/tempFakeData.json');
 
 exports.list_articles = function(req, res) {
-  res.send("to do: list articles");
+  res.json(data.articles);
 };
 
 exports.create_article = function(req, res) {
