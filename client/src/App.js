@@ -57,12 +57,12 @@ class App extends Component {
           </Collapse>
         </Navbar>
 
-        <Container>
+        <Container style={{"padding-top": "1.5em"}}>
           <Row>
             <Col>
               <div className="box">
                 <Switch>
-                  <Route exact path="/" component={Home} />
+                  <Route exact path="/" component={Articles} />
                   <Route path="/articles" component={Articles} />
                   <Route path="/article/:id" component={Article} />
                   <Route path="/add-new-article" component={AddArticle} />

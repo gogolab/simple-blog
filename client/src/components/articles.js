@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBlock } from 'reactstrap';
+import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBlock, CardImgOverlay, CardFooter } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 
 export class Articles extends Component {
@@ -25,31 +25,33 @@ export class Articles extends Component {
   render() {
     return (
       <div>
-        <h2>All Articles</h2>
         <Row>
           <CardDeck>
             {this.state.articles.map( (article, index) => {
               if(index === 0) {
                 return (
-                  <Col sm={8} style={{display: "flex", "flex-direction": "column"}}>
-                    <Card style={{"margin-bottom": "1em"}}>
-                      <CardImg top width="100%" src={article.imageUrl} style={{"object-fit": "cover", "max-height": "200px"}}  alt="Card image cap" />
-                      <CardBlock>
+                  <Col sm={12} lg={8} style={{display: "flex", "flex-direction": "column"}}>
+                    <Card inverse style={{"margin-bottom": "30px"}}>
+                      <CardImg top width="100%" src={article.imageUrl} style={{}}  alt="Card image cap" />
+                      <CardImgOverlay style={{display: "flex", "flex-direction": "column-reverse", "justify-content": "flex-start", background: "linear-gradient(to top, hsl(0, 0%, 0%), hsla(44.3, 100%, 45.1%, 0.1) 60%, hsla(44.3, 100%, 45.1%, 0.2)"}}>
                         <CardTitle style={{"text-transform": "uppercase"}}>{article.title}</CardTitle>
-                        <Button>Button</Button>
-                      </CardBlock>
+                        <div style={{"text-transform": "uppercase", color: "#aaa", "font-size": "0.75em"}}>july 6, 2017</div>
+                      </CardImgOverlay>
                     </Card>
                   </Col>
                 );
               } else {
                 return (
-                  <Col sm={4} style={{display: "flex", "flex-direction": "column"}}>
-                    <Card style={{"margin-bottom": "1em"}}>
+                  <Col sm={12} md={6} lg={4} style={{display: "flex", "flex-direction": "column"}}>
+                    <Card style={{"margin-bottom": "30px"}}>
                       <CardImg top width="100%" src={article.imageUrl} style={{"object-fit": "cover", "max-height": "200px"}}  alt="Card image cap" />
-                      <CardBlock>
+                      <CardBlock style={{display: "flex", "flex-flow": "column nowrap", "justify-content": "flex-start", "min-height": "150px"}}>
+                        <div style={{"text-transform": "uppercase", color: "#aaa", "font-size": "0.75em"}}>july 6, 2017</div>
                         <CardTitle style={{"text-transform": "uppercase"}}>{article.title}</CardTitle>
-                        <Button>Button</Button>
                       </CardBlock>
+                      <CardFooter>
+                        <img src="http://i.imgur.com/fzwK2ap.jpg" width="40px" style={{"border-radius": "50%"}} />
+                      </CardFooter>
                     </Card>
                   </Col>
                 );
