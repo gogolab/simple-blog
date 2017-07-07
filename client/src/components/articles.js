@@ -12,7 +12,7 @@ export class Articles extends Component {
     
     this.state = {
       users: [],
-      articles: []
+      articles: [],
     };
   }
   
@@ -24,6 +24,7 @@ export class Articles extends Component {
     fetch("/articles")
       .then(res => res.json())
       .then(articles => this.setState({articles}));
+      
   }
   
   _handleWaypointEnter() {
@@ -68,7 +69,7 @@ export class Articles extends Component {
               }
             })}
             <Waypoint onEnter={this._handleWaypointEnter} >
-              <div>Waypoint</div>
+              <div>Waypoint ToDo: prevent it from firing on pageload, before content</div>
             </Waypoint>
           </CardDeck>
         </Row>
