@@ -57,7 +57,7 @@ class App extends Component {
           </Collapse>
         </Navbar>
 
-        <Container style={{"padding-top": "1.5em"}}>
+        <Container style={{paddingTop: "1.5em"}}>
           <Row>
             <Col>
               <div className="box">
