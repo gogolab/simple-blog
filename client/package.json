@@ -11,6 +11,7 @@
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
     "react-scripts": "1.0.10",
+    "react-waypoint": "^7.0.4",
     "reactstrap": "^4.8.0"
   },
   "scripts": {

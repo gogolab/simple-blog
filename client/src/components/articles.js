@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import { Card, Button, CardImg, CardTitle, CardText, CardDeck, CardSubtitle, CardBlock, CardImgOverlay, CardFooter } from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import Waypoint from 'react-waypoint';
 
 export class Articles extends Component {
   constructor(props) {
     super(props)
+    
+    this._handleWaypointEnter = this._handleWaypointEnter.bind(this);
     
     this.state = {
       users: [],
@@ -21,6 +24,10 @@ export class Articles extends Component {
     fetch("/articles")
       .then(res => res.json())
       .then(articles => this.setState({articles}));
+  }
+  
+  _handleWaypointEnter() {
+    console.log("entered waypoint - load more content");
   }
   
   render() {
@@ -60,6 +67,9 @@ export class Articles extends Component {
                 );
               }
             })}
+            <Waypoint onEnter={this._handleWaypointEnter} >
+              <div>Waypoint</div>
+            </Waypoint>
           </CardDeck>
         </Row>
       </div>
