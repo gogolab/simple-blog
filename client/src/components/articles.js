@@ -34,7 +34,7 @@ export class Articles extends Component {
   render() {
     return (
       <div>
-        <Row>
+        <Row style={{minHeight: "100vh"}}>
           <CardDeck>
             {this.state.articles.map( (article, index) => {
               let articleUrl = "/article/" + article.id;
@@ -133,10 +133,15 @@ export class Articles extends Component {
                 );
               }
             })}
+            
+          </CardDeck>
+        </Row>
+        <Row>
+          <Col>
             <Waypoint onEnter={this._handleWaypointEnter} >
               <div>Waypoint ToDo: prevent it from firing on pageload, before content</div>
             </Waypoint>
-          </CardDeck>
+          </Col>
         </Row>
       </div>
     );
