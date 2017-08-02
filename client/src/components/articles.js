@@ -12,19 +12,18 @@ export class Articles extends Component {
     
     this.state = {
       users: [],
-      articles: [],
+      articles: []
     };
   }
   
   componentDidMount() {
-    fetch("/users")
-      .then(res => res.json())
-      .then(users => this.setState({users}));
+    // fetch("/users")
+    //   .then(res => res.json())
+    //   .then(users => this.setState({users}));
 
     fetch("/articles")
       .then(res => res.json())
       .then(articles => this.setState({articles}));
-      
   }
   
   _handleWaypointEnter() {
