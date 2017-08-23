@@ -24,10 +24,14 @@ export class Article extends Component {
   }
   
   render() {
+    console.log(this.state.article);
     return (
       <Row>
         <Col>
           <h1>{this.state.article.title}</h1>
+          <div className="created-at">
+            {this.state.article.createdAt}
+          </div>
           <div style={{}}>
             <img src={this.state.article.imageUrl} className="img-fluid" />
           </div>

@@ -14,6 +14,7 @@ class App extends Component {
     super(props);
     
     this.toggle = this.toggle.bind(this);
+    this.loadData = this.loadData.bind(this);
 
     this.state = {
       users: [],
@@ -21,15 +22,13 @@ class App extends Component {
       isOpen: false
     };
   };
+  
+  loadData() {
+    console.log('loadData test');
+  }
 
   componentDidMount() {
-    fetch("/users")
-      .then(res => res.json())
-      .then(users => this.setState({users}));
-
-    fetch("/articles/34234")
-      .then(res => res.json())
-      .then(article => this.setState({article}));
+    this.loadData;
   }
   
   toggle() {
